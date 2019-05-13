@@ -4,6 +4,8 @@
 
 2 简单处理图像
 
+3 通过shell或者cmd命令来调用其他程序
+
 ## 环境依赖
 
 OpencvSharp（用nuget安装）
@@ -12,7 +14,7 @@ Arcgis
 
 Devexpress
 
-xampp
+xampp（mysql）
 
 VS2015
 

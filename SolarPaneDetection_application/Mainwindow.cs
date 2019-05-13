@@ -6,6 +6,7 @@ using ESRI.ArcGIS.Display;
 using System;
 using ESRI.ArcGIS.SystemUI;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace SolarPaneDetection_application
 {
@@ -247,7 +248,7 @@ namespace SolarPaneDetection_application
 
         private void axMapControl1_OnMouseMove(object sender, IMapControlEvents2_OnMouseMoveEvent e)
         {
-            if (this.axMapControl1.LayerCount == 0)
+            if (axMapControl1.LayerCount == 0)
             {
                 ScaleLabel.Text = "";
                 CoordinateLabel.Text = "";
@@ -344,7 +345,16 @@ namespace SolarPaneDetection_application
             DetectImgEdge di = new DetectImgEdge(UAVFilelist);
 
             di.Show();
+        } 
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+               
+            ProgressBar pb = new ProgressBar();
+            pb.Show();
+            
         }
+
 
     }
 }
