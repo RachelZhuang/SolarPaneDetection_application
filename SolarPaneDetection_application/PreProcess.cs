@@ -23,8 +23,8 @@ namespace SolarPaneDetection_application
             }
             else
             {
-                this.label1.Text = ipos.ToString() + "/100";
-                this.progressBar1.Value = Convert.ToInt32(ipos);
+                //this.label1.Text = ipos.ToString() + "/100";
+                //this.progressBar1.Value = Convert.ToInt32(ipos);
                 this.textBox1.AppendText(vinfo);
             }
         }
@@ -40,8 +40,8 @@ namespace SolarPaneDetection_application
 
             Process p = new Process();
 
-            string path = @"C:/Users/Administrator/PycharmProjects/test/test.py";//(因为我没放debug下，所以直接写的绝对路径,替换掉上面的路径了)
-            p.StartInfo.FileName = @"C:/Users/Administrator/AppData/Local/Programs/Python/Python37/python.exe";//没有配环境变量的话，可以像我这样写python.exe的绝对路径。如果配了，直接写"python.exe"即可
+            string path = @"E:/Project/matlab_/mean_std_texture/histogram_contras.py";//(因为我没放debug下，所以直接写的绝对路径,替换掉上面的路径了)
+            p.StartInfo.FileName = @"D:/Anaconda/python.exe";//没有配环境变量的话，可以像我这样写python.exe的绝对路径。如果配了，直接写"python.exe"即可
 
 
             p.StartInfo.Arguments = path;
@@ -80,6 +80,11 @@ namespace SolarPaneDetection_application
             return Regex.IsMatch(value, @"^[+-]?\d*[.]?\d*$");
         }
         public static int prev_pos = 0, cur_pos = 0;
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         public void AppendText(string text)
         {

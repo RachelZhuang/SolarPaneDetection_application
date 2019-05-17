@@ -163,15 +163,15 @@
     <Compile Include="PreProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PreProcess.Designer.cs">
+    <Compile Include="PreProcess.designer.cs">
       <DependentUpon>PreProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="DowloadProgressBar.cs">
+    <Compile Include="ProgressBar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DowloadProgressBar.Designer.cs">
-      <DependentUpon>DowloadProgressBar.cs</DependentUpon>
+    <Compile Include="ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveLayer.cs" />
@@ -188,11 +188,11 @@
     <EmbeddedResource Include="Mainwindow.resx">
       <DependentUpon>Mainwindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DowloadProgressBar.resx">
-      <DependentUpon>DowloadProgressBar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PreProcess.resx">
       <DependentUpon>PreProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -22,8 +22,8 @@ namespace SolarPaneDetection_application
             }
             else
             {
-                this.label1.Text = ipos.ToString() + "/100";
-                this.progressBar1.Value = Convert.ToInt32(ipos);
+                //this.label1.Text = ipos.ToString() + "/100";
+                //this.progressBar1.Value = Convert.ToInt32(ipos);
                 this.textBox1.AppendText(vinfo);
             }
         }

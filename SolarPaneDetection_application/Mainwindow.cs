@@ -350,7 +350,7 @@ namespace SolarPaneDetection_application
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
                
-            DowloadProgressBar pb = new DowloadProgressBar();
+            ProgressBar pb = new ProgressBar();
             pb.Show();
             
         }
