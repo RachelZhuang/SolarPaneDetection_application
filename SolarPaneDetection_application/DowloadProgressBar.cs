@@ -6,9 +6,9 @@ using System.Windows.Forms;
 
 namespace SolarPaneDetection_application
 {
-    public partial class ProgressBar : Form
+    public partial class DowloadProgressBar : Form
     {
-        public ProgressBar()
+        public DowloadProgressBar()
         {
             InitializeComponent();
         }

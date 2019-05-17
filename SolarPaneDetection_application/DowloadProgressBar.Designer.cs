@@ -1,6 +1,6 @@
 ﻿namespace SolarPaneDetection_application
 {
-    partial class ProgressBar
+    partial class DowloadProgressBar
     {
         /// <summary>
         /// Required designer variable.

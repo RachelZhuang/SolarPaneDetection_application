@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainwindow));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
@@ -46,7 +47,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.axLicenseControl1 = new ESRI.ArcGIS.Controls.AxLicenseControl();
             this.axMapControl1 = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axMapControl2 = new ESRI.ArcGIS.Controls.AxMapControl();
@@ -59,6 +60,8 @@
             this.axToolbarControl1 = new AxESRI.ArcGIS.Controls.AxToolbarControl();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axLicenseControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -82,10 +85,11 @@
             this.卫星,
             this.barButtonItem10,
             this.barButtonItem1,
-            this.barButtonItem2});
+            this.barButtonItem2,
+            this.barButtonItem3});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.ribbonControl1.MaxItemId = 16;
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ribbonControl1.MaxItemId = 17;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -93,7 +97,7 @@
             this.ribbonPage2,
             this.ribbonPage6});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.ribbonControl1.Size = new System.Drawing.Size(1458, 190);
+            this.ribbonControl1.Size = new System.Drawing.Size(1276, 150);
             // 
             // barButtonGroup1
             // 
@@ -171,6 +175,8 @@
             // 
             // ribbonPage3
             // 
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup5});
             this.ribbonPage3.Name = "ribbonPage3";
             this.ribbonPage3.Text = "自动预处理";
             // 
@@ -207,6 +213,7 @@
             // 
             this.axLicenseControl1.Enabled = true;
             this.axLicenseControl1.Location = new System.Drawing.Point(825, 100);
+            this.axLicenseControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.axLicenseControl1.Name = "axLicenseControl1";
             this.axLicenseControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axLicenseControl1.OcxState")));
             this.axLicenseControl1.Size = new System.Drawing.Size(32, 32);
@@ -218,6 +225,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.axMapControl1.Location = new System.Drawing.Point(287, 199);
+            this.axMapControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
             this.axMapControl1.Size = new System.Drawing.Size(1646, 698);
@@ -230,6 +238,7 @@
             // 
             this.axMapControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.axMapControl2.Location = new System.Drawing.Point(0, 571);
+            this.axMapControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.axMapControl2.Name = "axMapControl2";
             this.axMapControl2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl2.OcxState")));
             this.axMapControl2.Size = new System.Drawing.Size(281, 232);
@@ -242,6 +251,7 @@
             this.axTOCControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.axTOCControl1.Location = new System.Drawing.Point(0, 199);
+            this.axTOCControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.axTOCControl1.Name = "axTOCControl1";
             this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
             this.axTOCControl1.Size = new System.Drawing.Size(281, 460);
@@ -256,23 +266,24 @@
             this.Blank,
             this.CoordinateLabel,
             this.ScaleLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 732);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 567);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1458, 25);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1276, 22);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // MessageLabel
             // 
             this.MessageLabel.Name = "MessageLabel";
-            this.MessageLabel.Size = new System.Drawing.Size(39, 20);
+            this.MessageLabel.Size = new System.Drawing.Size(32, 17);
             this.MessageLabel.Text = "就绪";
             this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Blank
             // 
             this.Blank.Name = "Blank";
-            this.Blank.Size = new System.Drawing.Size(1404, 20);
+            this.Blank.Size = new System.Drawing.Size(1231, 17);
             this.Blank.Spring = true;
             this.Blank.Text = " ";
             this.Blank.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -280,16 +291,17 @@
             // CoordinateLabel
             // 
             this.CoordinateLabel.Name = "CoordinateLabel";
-            this.CoordinateLabel.Size = new System.Drawing.Size(0, 20);
+            this.CoordinateLabel.Size = new System.Drawing.Size(0, 17);
             // 
             // ScaleLabel
             // 
             this.ScaleLabel.Name = "ScaleLabel";
-            this.ScaleLabel.Size = new System.Drawing.Size(0, 20);
+            this.ScaleLabel.Size = new System.Drawing.Size(0, 17);
             // 
             // axToolbarControl1
             // 
             this.axToolbarControl1.Location = new System.Drawing.Point(0, 162);
+            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.axToolbarControl1.Name = "axToolbarControl1";
             this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
             this.axToolbarControl1.Size = new System.Drawing.Size(518, 28);
@@ -305,12 +317,25 @@
             // 
             this.gridView1.Name = "gridView1";
             // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "开始";
+            this.barButtonItem3.Id = 16;
+            this.barButtonItem3.ImageUri.Uri = "DoubleNext";
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            // 
             // Mainwindow
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1458, 757);
+            this.ClientSize = new System.Drawing.Size(1276, 589);
             this.Controls.Add(this.axToolbarControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.axTOCControl1);
@@ -318,7 +343,7 @@
             this.Controls.Add(this.axMapControl1);
             this.Controls.Add(this.axLicenseControl1);
             this.Controls.Add(this.ribbonControl1);
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Mainwindow";
             this.Ribbon = this.ribbonControl1;
             this.Text = "遥感图像解译平台v1.0";
@@ -372,6 +397,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
     }
 }
 
