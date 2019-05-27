@@ -30,8 +30,13 @@ namespace SolarPaneDetection_application
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string exe = @"D:/Anaconda/python.exe";
             string dosCommand = @"E:/Project/matlab_/mean_std_texture/histogram_contras.py";
+=======
+            string exe = @"C:/Users/Administrator/AppData/Local/Programs/Python/Python37/python.exe";
+            string dosCommand = @"C:/Users/Administrator/PycharmProjects/test/test.py";
+>>>>>>> 62c1442b6c41e9b830dcca4782b308d13a1658af
             string output = DosCommandOutput.Execute(exe,dosCommand);
         }
        
