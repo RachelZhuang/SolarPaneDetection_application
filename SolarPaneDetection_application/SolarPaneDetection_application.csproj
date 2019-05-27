@@ -152,6 +152,7 @@
     <Compile Include="DetectImgEdge.Designer.cs">
       <DependentUpon>DetectImgEdge.cs</DependentUpon>
     </Compile>
+    <Compile Include="DosCommandOutput.cs" />
     <Compile Include="LayerVisibility.cs" />
     <Compile Include="Mainwindow.cs">
       <SubType>Form</SubType>

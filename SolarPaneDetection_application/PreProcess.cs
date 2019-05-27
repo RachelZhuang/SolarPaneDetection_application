@@ -40,7 +40,7 @@ namespace SolarPaneDetection_application
 
             Process p = new Process();
 
-            string path = @"E:/Project/matlab_/mean_std_texture/histogram_contras.py";//(因为我没放debug下，所以直接写的绝对路径,替换掉上面的路径了)
+            string path = @"E:/Project/python_/sentinel/auto_downloading.py";//(因为我没放debug下，所以直接写的绝对路径,替换掉上面的路径了)
             p.StartInfo.FileName = @"D:/Anaconda/python.exe";//没有配环境变量的话，可以像我这样写python.exe的绝对路径。如果配了，直接写"python.exe"即可
 
 
