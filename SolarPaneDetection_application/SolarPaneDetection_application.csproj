@@ -146,6 +146,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuildingExtraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingExtraction.Designer.cs">
+      <DependentUpon>BuildingExtraction.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetectImgEdge.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
       <DependentUpon>RSdataQuery.cs</DependentUpon>
     </Compile>
     <Compile Include="ZoomToLayer.cs" />
+    <EmbeddedResource Include="BuildingExtraction.resx">
+      <DependentUpon>BuildingExtraction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetectImgEdge.resx">
       <DependentUpon>DetectImgEdge.cs</DependentUpon>
     </EmbeddedResource>

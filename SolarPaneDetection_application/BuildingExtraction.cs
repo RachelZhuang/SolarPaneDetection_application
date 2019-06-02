@@ -1,36 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using OpenCvSharp;
 
 namespace SolarPaneDetection_application
 {
-    public partial class DetectImgEdge : Form
+    public partial class BuildingExtraction : Form
     {
-         public DetectImgEdge()
+        public BuildingExtraction()
         {
             InitializeComponent();
-        }
-        public DetectImgEdge(IList<string> uavFilelist)
-        {
-            InitializeComponent();
-            comboBox1.DataSource = uavFilelist;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string path = comboBox1.Text;
-            Mat src = new Mat(path, ImreadModes.Grayscale);
+            string exe = @"D:\Anaconda\python.exe";
+            string dosCommand = @"D:\Download\SolarPaneDetection_application-master\SolarPaneDetection_application-master\SolarPaneDetection_application\test.py";
+            dosCommand = dosCommand + " " + comboBox1.Text;
 
-            Mat dst = new Mat();
-
-            Cv2.Canny(src, dst, 50, 200);
-            using (new Window("src image", src))
-            using (new Window("dst image", dst))
-            {
-                Cv2.WaitKey();
-            }
-
+            string output = DosCommandOutput.Execute(exe, dosCommand);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -44,7 +37,5 @@ namespace SolarPaneDetection_application
 
             }
         }
-
-     
     }
 }

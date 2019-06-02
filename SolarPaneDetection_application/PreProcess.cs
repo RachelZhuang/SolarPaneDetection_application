@@ -16,6 +16,10 @@ namespace SolarPaneDetection_application
             string dosCommand = @"E:/Project/matlab_/mean_std_texture/histogram_contras.py";
             string output = DosCommandOutput.Execute(exe, dosCommand);
         }
-    
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

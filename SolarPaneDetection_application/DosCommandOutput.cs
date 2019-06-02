@@ -33,7 +33,7 @@ namespace SolarPaneDetection_application
                 startInfo.Arguments = dosCommand;   //设定参数，其中的“/C”表示执行完命令后马上退出
                 startInfo.UseShellExecute = false;     //不使用系统外壳程序启动
                 startInfo.RedirectStandardInput = false;   //不重定向输入
-                startInfo.RedirectStandardOutput =false;   //不重定向输出
+                startInfo.RedirectStandardOutput =true;   //不重定向输出
                 startInfo.CreateNoWindow = false;     //创建窗口
                 process.StartInfo = startInfo;
                 try

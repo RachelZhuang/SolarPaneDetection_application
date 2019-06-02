@@ -360,5 +360,11 @@ namespace SolarPaneDetection_application
             PreProcess pp = new PreProcess();
             pp.Show();
         }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            BuildingExtraction be = new BuildingExtraction();
+            be.Show();
+        }
     }
 }
